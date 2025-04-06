@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>String method</h1>
+   <h1>Number Method</h1>
+   <h1>Math Method</h1>
+   <h1>Date Method</h1>
+   <script>
+    const text ="Hello Krutika";
+    console.log("converting string to uppercase and lowercase");
+    console.log(text.toUpperCase());
+    console.log(text.toLowerCase());
+
+    const sentence="climate is changing so fast and can't able understand";
+    console.log("index of a substring in a string");
+    console.log(sentence.indexOf("changing"));
+
+    const greeting= "Good Afternoon!";
+    console.log("portion of a string using slice");
+    console.log(greeting.slice(5,14));
+
+    const phrase="Rainy season is so lovely";
+    console.log("String with another string");
+    console.log(phrase.replace("lovely","dangerous"));
+
+    const strNum="50";
+    console.log("string to a number");
+    console.log(Number(strNum));
+
+    const num=3.147;
+    console.log("number to two decimal place");
+    console.log(num.toFixed(2));
+
+    const floatString="3.14";
+    console.log("floating-point number");
+    console.log(parseFloat(floatString));
+
+    const intString="50";
+    console.log("Parse an integer");
+    console.log(parseInt(intString));
+
+    console.log("Math Method");
+    console.log(Math.round(5.5));
+    console.log(Math.round(5.4));
+    console.log("random number between 0 and 1");
+    console.log(Math.random());
+    console.log("maximum and minimum");
+    console.log(Math.max(1,2,3,4,5,6,7,8,9,10));
+    console.log(Math.min(0,1,2,3,4,5,6,7,8,9,10));
+    console.log("Square root");
+    console.log(Math.sqrt(25));
+
+    console.log("DATE METHODS");
+    const now=new Date();
+    console.log("current date nad time");
+    console.log(now);
+
+    const today = new Date();
+    console.log("the year, month,and day from a date");
+    console.log(today.getFullYear());
+    console.log(today.getMonth());
+    console.log(today.getDate());
+
+    const specificDate = new Date("2025-04-05");
+    console.log("set a specific date");
+    console.log(specificDate);
+
+    console.log("Conditional Statements");
+    if (num>0){
+        console.log("Positive number");
+    }
+    console.log("if-else statements");
+    if(num %5===0){
+        console.log("Even");
+    }
+    else{
+        console.log("Odd");
+    }
+   
+    function sum(a,b){
+        return a+b;
+    }
+    console.log(sum(5,10));
+    function isEven(number){ 
+        return number %2 ===0 ? "Even":"Odd";
+    }
+    console.log(isEven(9));
+    
+    function greet(name = "Guest") {
+    console.log(`Hello, ${name}!`);
+}
+greet();
+greet("Alice");
+
+const area=(length, width)=> length*width;
+console.log(area(5,10));
+
+let i = 1;
+while (i <= 5) {
+    console.log(i);
+    i++;
+}
+let password;
+do{
+    password= prompt("Enter the password:");
+}while(password !== "1234");
+alert("Acess granted");
+
+const number=3;
+for(let i=1; i<=10; i++){
+    console.log("${number} x ${i} = ${number*i}");
+}
+for(let i=1;i<=3; i++){
+    let row ="";
+    for(let j =1;j<=3;j++){
+        row +="*";
+    }
+    console.log(row);
+}
+
+
+
+   </script> 
+</body>
+</html>
